@@ -7,4 +7,8 @@ services:
       - 3000:3000
     volumes:
       - .:/app
-    working_dir: /app    
+      - node_modules:/usr/src/app/node_modules
+    working_dir: /app
+
+volumes:
+    node_modules:

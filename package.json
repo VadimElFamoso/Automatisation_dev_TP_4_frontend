@@ -10,7 +10,7 @@
     "test": "vitest",
     "test:ui": "vitest --ui --coverage.enabled=true",
     "test:coverage": "vitest run --coverage",
-    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "lint": "eslint . --fix --ignore-path .gitignore",
     "format": "prettier --write .",
     "precommit": "npm run lint && npm run format && npm run test"
   },
@@ -37,5 +37,8 @@
     "start-server-and-test": "^2.0.3",
     "vite": "^5.0.10",
     "vitest": "^1.0.4"
+  },
+  "optionalDependencies": {
+    "@rollup/rollup-linux-x64-gnu": "4.9.5"
   }
 }
