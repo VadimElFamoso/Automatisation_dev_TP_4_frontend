@@ -33,7 +33,6 @@ describe('Counter', () => {
       await wrapper.find('button[id=increment]').trigger('click')
       expect(counterStore.increment).toHaveBeenCalledTimes(1)
     })
-    it('decrements counter', async () => {
-    })
+    it('decrements counter', async () => {})
   })
 })
