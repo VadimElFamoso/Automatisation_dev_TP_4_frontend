@@ -23,7 +23,7 @@ jobs:
         run: npm ci
 
       - name: Run linter
-        run: npx eslint "**/*.{vue,js,jsx,cjs,mjs}" --fix --ignore-path .gitignore
+        run: npx eslint "**/*.{vue,js,jsx,cjs,mjs}" --fix
 
       - name: Run formatter
         run: npm run format
