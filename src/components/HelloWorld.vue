@@ -9,9 +9,9 @@ const appName = import.meta.env.VITE_APP_NAME
 </script>
 
 <template>
-  <div class="test">
-    <h1>Bonjour à tous</h1>
-    <p>Test</p>
+  <div class="greetings">
+    <h1 class="green">{{ msg }}</h1>
+    <h3>Running {{ appName }} app !</h3>
   </div>
 </template>
 
