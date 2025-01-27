@@ -59,8 +59,9 @@ jobs:
 
       - name: Run end-to-end tests
         run: npm run test:e2e:dev
-        ELECTRON_DISABLE_GPU: 1
-        CYPRESS_INSTALL_BINARY: 0
+        env:
+          ELECTRON_DISABLE_GPU: 1
+          CYPRESS_INSTALL_BINARY: 0
 
   build:
     runs-on: ubuntu-latest
