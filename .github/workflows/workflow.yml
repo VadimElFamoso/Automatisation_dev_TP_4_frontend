@@ -52,6 +52,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Launch development server
+        run: npm run dev
+
       - name: Run unitary tests
         run: npm run test
         env:
